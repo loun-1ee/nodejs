@@ -1,0 +1,30 @@
+{
+<<<<<<< HEAD
+  "name": "0604",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+=======
+  "name": "tag-team-server",
+  "version": "1.0.0",
+  "description": "태그팀 Express 서버",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+>>>>>>> 9d410b72f10e125320624809ad0f3801bb116c89
+  }
+}

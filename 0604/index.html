@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAG TEAM 회원 관리 서비스</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>TAG TEAM</h2>
+
+        <div>
+            <button onclick="showPage('login-page')">
+                로그인
+            </button>
+
+            <button onclick="showPage('register-page')">
+                회원가입
+            </button>
+        </div>
+    </nav>
+
+    <!-- 메인 -->
+    <section id="home-page" class="page active">
+
+        <h1>TAG TEAM 회원 관리 서비스</h1>
+
+        <p>
+            회원가입 후 자신만의 프로필을 만들어보세요.
+        </p>
+
+        <button onclick="showPage('login-page')">
+            로그인
+        </button>
+
+        <button onclick="showPage('register-page')">
+            회원가입
+        </button>
+
+    </section>
+
+    <!-- 회원가입 -->
+    <section id="register-page" class="page">
+
+        <h2>회원가입</h2>
+
+        <input id="reg-id" placeholder="아이디">
+        <input id="reg-password" type="password" placeholder="비밀번호">
+        <input id="reg-password-check" type="password" placeholder="비밀번호 확인">
+        <input id="reg-name" placeholder="이름">
+        <input id="reg-major" placeholder="학과">
+        <input id="reg-interest" placeholder="관심 분야">
+        <input id="reg-goal" placeholder="목표">
+        <textarea id="reg-intro" placeholder="자기소개"></textarea>
+
+        <button onclick="register()">
+            회원가입
+        </button>
+
+        <p id="register-message"></p>
+
+    </section>
+
+    <!-- 로그인 -->
+    <section id="login-page" class="page">
+        <h2>로그인</h2>
+        <input id="login-id" placeholder="아이디">
+        <input id="login-password" type="password" placeholder="비밀번호">
+        <button onclick="login()">
+            로그인
+        </button>
+        <p id="login-message"></p>
+    </section>
+
+    <!-- 마이페이지 -->
+    <section id="profile-page" class="page">
+        <div class="profile-card">
+            <img src="https://picsum.photos/200" alt="profile">
+            <h2 id="profile-name"></h2>
+            <p id="profile-major"></p>
+            <div id="profile-interest"></div>
+            
+            <h3>목표</h3>
+            <p id="profile-goal"></p>
+
+            <h3>자기소개</h3>
+            <p id="profile-intro"></p>
+
+            <button onclick="logout()">
+                로그아웃
+            </button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
